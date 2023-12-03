@@ -1,4 +1,4 @@
-package com.fourroro.nolleogasil.repository;
+package com.fourroro.nolleogasil.repository.users;
 
 import com.fourroro.nolleogasil.entity.Wish;
 import org.springframework.data.repository.CrudRepository;
