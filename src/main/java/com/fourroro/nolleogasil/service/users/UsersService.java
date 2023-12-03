@@ -1,6 +1,6 @@
-package com.fourroro.nolleogasil.service;
+package com.fourroro.nolleogasil.service.users;
 
-import com.fourroro.nolleogasil.entity.Users;
+import com.fourroro.nolleogasil.entity.users.Users;
 
 import java.util.List;
 

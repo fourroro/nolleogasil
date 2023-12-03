@@ -1,4 +1,4 @@
-package com.fourroro.nolleogasil.entity;
+package com.fourroro.nolleogasil.entity.users;
 
 import jakarta.persistence.*;
 import lombok.Builder;
@@ -12,28 +12,21 @@ import lombok.NoArgsConstructor;
 public class Users {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "u_id", nullable = false)
+    @Column(name = "u_id")
     private Long u_id;
 
-    @Column(nullable = false)
     private String name;
 
-    @Column(nullable = false)
     private String email;
 
-    @Column(nullable = false)
     private String pwd;
 
-    @Column(nullable = false)
     private String nickname;
 
-    @Column(nullable = false)
     private String phone;
 
-    @Column(nullable = false)
     private int gender;
 
-    @Column(nullable = false)
     private float mateTemp;
 
     //후에 필요한 정보대로 변경
