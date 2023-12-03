@@ -1,6 +1,6 @@
-package com.fourroro.nolleogasil.dto.TravelPath;
+package com.fourroro.nolleogasil.dto.travelpath;
 
-import com.fourroro.nolleogasil.entity.TravelPath.Keywords;
+import com.fourroro.nolleogasil.entity.travelpath.Keywords;
 import lombok.Getter;
 import lombok.Setter;
 

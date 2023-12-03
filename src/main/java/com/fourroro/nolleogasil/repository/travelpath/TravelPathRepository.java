@@ -1,6 +1,6 @@
-package com.fourroro.nolleogasil.repository.TravelPath;
+package com.fourroro.nolleogasil.repository.travelpath;
 
-import com.fourroro.nolleogasil.entity.TravelPath.TravelPath;
+import com.fourroro.nolleogasil.entity.travelpath.TravelPath;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
