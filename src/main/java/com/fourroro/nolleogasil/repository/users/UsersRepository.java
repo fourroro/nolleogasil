@@ -1,11 +1,13 @@
-package com.fourroro.nolleogasil.repository;
+package com.fourroro.nolleogasil.repository.users;
 
-import com.fourroro.nolleogasil.entity.Users;
+import com.fourroro.nolleogasil.entity.users.Users;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
 public interface UsersRepository extends JpaRepository<Users, Long> {
     //insert
+    //save()
+
     //update
     @Query("update Users " +
             "set pwd = :users.pwd, nickname = :users.nickname " +

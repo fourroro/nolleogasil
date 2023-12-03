@@ -1,11 +1,11 @@
 package com.fourroro.nolleogasil.entity;
 
+import com.fourroro.nolleogasil.entity.users.Users;
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.List;
 
 
 @Entity
