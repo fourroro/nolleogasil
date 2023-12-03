@@ -1,4 +1,4 @@
-package com.fourroro.nolleogasil.dto;
+package com.fourroro.nolleogasil.dto.users;
 
 import lombok.Getter;
 import lombok.Setter;
