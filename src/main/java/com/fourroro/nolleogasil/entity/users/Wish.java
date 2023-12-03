@@ -1,4 +1,4 @@
-package com.fourroro.nolleogasil.entity;
+package com.fourroro.nolleogasil.entity.users;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
