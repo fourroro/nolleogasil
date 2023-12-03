@@ -17,7 +17,6 @@ public class ChatRoom {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "room_id")
     private Long room_id;
-    private String
     private String room_name; //채팅방 이름
     private Long master_id; //채팅방 개설자
     private int maxNum; //채팅방 최대 참여자수
