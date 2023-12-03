@@ -1,4 +1,4 @@
-package com.fourroro.nolleogasil.entity.TravelPath;
+package com.fourroro.nolleogasil.entity.travelpath;
 import com.fourroro.nolleogasil.entity.users.Users;
 import jakarta.persistence.*;
 import lombok.*;
