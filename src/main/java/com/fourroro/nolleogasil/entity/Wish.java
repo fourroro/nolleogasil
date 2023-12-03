@@ -10,21 +10,24 @@ import lombok.NoArgsConstructor;
 @Table(name = "Wish")
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-@IdClass(WishPK.class)
 public class Wish {
 
     @Id
-    //@ManyToOne
-    //@JoinColumn(name = "u_id")
-    private long u_id;
-    @Id
-    private String location_id;
+    private long w_id;
+
+    //Users:Wish = N:1 단방향 연관관계
+    @ManyToOne
+    @JoinColumn(name = "u_id")
+    private Users user;
+
+    private String location;
     private int locationCat;
 
     @Builder
-    public Wish(long u_id, String location_id, int locationCat) {
-        this.u_id = u_id;
-        this.location_id = location_id;
+    public Wish(long w_id, Users user, String location, int locationCat) {
+        this.w_id = w_id;
+        this.user = user;
+        this.location = location;
         this.locationCat = locationCat;
     }
 }

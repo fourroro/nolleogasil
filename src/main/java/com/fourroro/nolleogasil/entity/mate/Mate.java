@@ -1,4 +1,4 @@
-package com.fourroro.nolleogasil.entity;
+package com.fourroro.nolleogasil.entity.mate;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
@@ -18,10 +18,6 @@ public class Mate {
     @Id
     private long mate_id;
     private long u_id;
-
-    //Mate : MateMember = 1 : N 양방향? 단방향?
-//    private List<MateMember> members;
-
     private String place;
     @Temporal(TemporalType.DATE)
     private Date day;
@@ -31,8 +27,14 @@ public class Mate {
     private int foodCat;
     private String comments;
 
+    //Mate:MateMember = N:M 양방향 연관관계
+    @OneToMany(mappedBy = "mate")
+    private List<MateMember> members;
+
     @Builder
-    public Mate(long mate_id, long u_id, String place, Date day, Date time, int gender, int foodCat, String comments) {
+
+    public Mate(long mate_id, long u_id, String place, Date day, Date time,
+                int gender, int foodCat, String comments, List<MateMember> members) {
         this.mate_id = mate_id;
         this.u_id = u_id;
         this.place = place;
@@ -41,5 +43,6 @@ public class Mate {
         this.gender = gender;
         this.foodCat = foodCat;
         this.comments = comments;
+        this.members = members;
     }
 }
