@@ -1,21 +1,28 @@
-package com.fourroro.nolleogasil.dto;
+package com.fourroro.nolleogasil.dto.users;
 
-import com.fourroro.nolleogasil.entity.Users;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.antlr.v4.runtime.misc.NotNull;
 
 @Getter
 @Setter
 @NoArgsConstructor
 public class UsersDto {
+    @NotNull
     private Long u_id;
+    @NotNull
     private String name;
+    @NotNull
     private String email;
+    @NotNull
     private String pwd;
+    @NotNull
     private String nickname;
+    @NotNull
     private String phone;
+    @NotNull
     private int gender;
     private float mateTemp;
 
