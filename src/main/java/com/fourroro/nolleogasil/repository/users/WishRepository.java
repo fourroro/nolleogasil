@@ -1,6 +1,6 @@
 package com.fourroro.nolleogasil.repository.users;
 
-import com.fourroro.nolleogasil.entity.Wish;
+import com.fourroro.nolleogasil.entity.users.Wish;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
