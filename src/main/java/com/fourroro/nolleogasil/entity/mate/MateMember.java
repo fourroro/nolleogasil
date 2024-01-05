@@ -1,6 +1,6 @@
 package com.fourroro.nolleogasil.entity.mate;
 
-import com.fourroro.nolleogasil.entity.Users;
+import com.fourroro.nolleogasil.entity.users.Users;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;
