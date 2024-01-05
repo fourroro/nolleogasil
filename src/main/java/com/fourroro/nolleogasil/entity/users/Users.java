@@ -41,4 +41,8 @@ public class Users {
         this.gender = gender;
         this.mateTemp = mateTemp;
     }
+
+    public long getU_Id() {
+        return u_id;
+    }
 }
