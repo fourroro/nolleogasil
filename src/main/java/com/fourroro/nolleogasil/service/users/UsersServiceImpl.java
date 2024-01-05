@@ -1,12 +1,13 @@
 package com.fourroro.nolleogasil.service.users;
 
+import com.fourroro.nolleogasil.controller.users.ModifyUsersForm;
 import com.fourroro.nolleogasil.entity.users.Users;
 import com.fourroro.nolleogasil.repository.users.UsersRepository;
-import com.fourroro.nolleogasil.service.users.UsersService;
-import jakarta.transaction.Transactional;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -50,9 +51,9 @@ public class UsersServiceImpl implements UsersService {
 
     @Override
     @Transactional
-    public void updateUsers(Users users) {
+    public void updateUsers(ModifyUsersForm modifyUsersForm) {
     //회원정보 수정
-        usersRepository.updateUsers(users);
+        usersRepository.updateUsers(modifyUsersForm.getAccount());
     }
 
     @Override
